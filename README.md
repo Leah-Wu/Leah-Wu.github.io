@@ -1,3 +1,3 @@
 # Leah-wu.github.io
 
-Here is my depolyed page
+Here is my delpoyed code
