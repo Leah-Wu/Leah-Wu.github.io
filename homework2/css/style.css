@@ -77,7 +77,5 @@ div {
 
 footer p {
     text-align: right;
-    padding-bottom: 10px;
-    padding-right: 10px;
-    padding-top: 0px;
+    padding: 0px 10px 10px 0px;
 }
