@@ -60,7 +60,7 @@ table{
 }
 
 .colhead{
-  background-color: #7e0820;
+  background-color: rgba(126, 8, 32);
   color: #FFFFFF;
   text-transform: uppercase;
   text-align: center;
@@ -97,8 +97,7 @@ td{
 }
 
 tbody tr:hover{
-  background-color: #7e0820;
-  opacity: .25;
+  background-color: rgba(126, 8, 32, .25);
 }
 
 tr:last-child td:last-child{
