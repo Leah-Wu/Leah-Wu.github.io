@@ -1,0 +1,134 @@
+/*STARTER CODE*/
+
+/*
+We have started some of the selectors for you.
+For others we have provided hints on what the selectors should be.
+There are some missing selectors.
+
+Make sure to learn what the starter code does!!
+*/
+
+body{
+  color: #000000;
+  font-size: 16px;
+  margin: 1.2em;
+  font-family: 'Andika', sans-serif;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  background-image: url("../images/pigeon-background.jpeg");
+  background-repeat: no-repeat;
+  background-color: #DDDDDD;
+  box-sizing: border-box;
+  overflow: visible;
+}
+
+main{
+  margin-bottom: 100px;
+
+}
+
+p{
+  padding-top: 15px;
+}
+
+h1{
+  color:  #C12258;
+  font-size: 2em;
+  text-align: center;
+  line-height: 2;
+}
+
+a{
+  font-size: 16px;
+  color: #B21F50;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
+
+a:focus{
+    border-style: dashed;
+    border-width: 3px;
+    border-color: #417243;
+}
+
+table{
+  border: 2px solid #000000;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+.colhead{
+  background-color: #7e0830;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  min-width: 125px;
+  padding: 10px;
+}
+
+.colhead:first-child {
+  /* border-left: 2px solid #000000; */
+  border-top-left-radius: 10px;
+}
+
+.colhead:last-child{
+  border-top-right-radius: 10px;
+}
+
+.rowhead{
+  text-align: center;
+  vertical-align: middle;
+  border-style: solid;
+  border-color: #000000; 
+  border-width: 2px 2px 0px 0px; 
+}
+
+tr:last-child .rowhead{
+  border-bottom-left-radius: 10px;
+}
+
+td{
+  text-align: center;
+  vertical-align: middle;
+  border-top: 2px solid #000000;
+  padding: 10px;
+}
+
+tr:last-child td:last-child{
+  border-bottom-right-radius: 10px;
+}
+
+tr:nth-child(even){
+  background-color: #D1D1D1;
+}
+
+tr:nth-child(odd){
+  background-color: none;
+}
+
+tr:hover{
+  background-color: #7e0830;
+  opacity: 0.25;
+}
+
+
+
+caption{
+  margin:5px 0px;
+}
+
+footer{
+  width:100%;
+  background:#000000;
+  text-align:center;
+  color: #FFFFFF; 
+  min-height:75px; 
+  background-attachment: scroll;
+  position: fixed;
+  bottom: 0pt;
+  left: 0pt; 
+}
+
