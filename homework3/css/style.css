@@ -60,7 +60,7 @@ table{
 }
 
 .colhead{
-  background-color: #7e0830;
+  background-color: #7e0820;
   color: #FFFFFF;
   text-transform: uppercase;
   text-align: center;
@@ -96,6 +96,11 @@ td{
   padding: 10px;
 }
 
+tbody tr:hover{
+  background-color: #7e0830;
+  opacity: 0.25;
+}
+
 tr:last-child td:last-child{
   border-bottom-right-radius: 10px;
 }
@@ -106,11 +111,6 @@ tr:nth-child(even){
 
 tr:nth-child(odd){
   background-color: none;
-}
-
-table tbody tr:hover{
-  background-color: #7e0830;
-  opacity: 0.25;
 }
 
 caption{
