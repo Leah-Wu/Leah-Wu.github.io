@@ -98,7 +98,7 @@ td{
 
 tbody tr:hover{
   background-color: #7e0820;
-  opacity: 0.25;
+  opacity: .25;
 }
 
 tr:last-child td:last-child{
