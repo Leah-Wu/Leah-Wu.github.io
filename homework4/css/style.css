@@ -46,14 +46,15 @@ nav a:hover, nav a:focus{
   -webkit-transition: top 1s ease-out;
   transition: top 1s ease-out;
   z-index: 1;
-  position: relative;
+  position: absolute;
   top: -40px;
 }
 
 /*Your Code Here*/
 /*Write selector/rule property to position the skip class element*/
 .skip a:focus{
-  position: relative;
+  top: 0;
+  left: 0;
 }
 /*Your Code Here*/
 /*Write selector/rule property to style all elements when in focus*/
@@ -77,8 +78,9 @@ footer{
 .container{
   /*Your Code Here*/
   display: grid;
+  -webkit-grid-template-columns: 1fr 5fr 1fr;
   grid-template-columns: 1fr 5fr 1fr;
-  grid-template-rows: auto, auto, auto, auto, auto;
+  grid-template-rows: auto;
   grid-row-gap: 15px;
   width:100%;
   height:auto;
@@ -114,6 +116,8 @@ header p{
 .about-image, .method-image, .clients-image, .contact-image{
   grid-column: 1 / -1; 
   max-height: 700px;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .about, .about-image{
@@ -138,8 +142,10 @@ header p{
   border: 10px solid black;
   padding: 30px;
   /*Your code here:*/
-  margin: auto;
-
+  /* margin: auto; */
+  align-self: center;
+  /* text-align: center; */
+  /* vertical-align: middle;  */
 }
 
 
@@ -147,18 +153,25 @@ header p{
   nav{
     padding: 30px 0px;
     /*Your code here:*/
+    text-align: right;
   }
 
   .container{
     /*Your code here:*/
+    display: grid;
+    -webkit-grid-template-columns: 50px auto 500px auto 50px;
+    grid-template-columns: 50px auto 500px auto 50px;
+    grid-template-rows: 400px 400px 400px 400px 400px;
+    width:100%;
+    height:auto;
   }
 
   .about, .clients, .method-image, .contact-image{
-    /*Your code here:*/
+    grid-column: 3 / span 2;
   }
 
   .about-image, .clients-image, .method, .contact{
-    /*Your code here:*/
+    grid-column: 2 / span 2;
   }
 }
 
