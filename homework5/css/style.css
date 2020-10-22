@@ -221,6 +221,21 @@ header{
   }
   /*Your code here again.*/
   /*You will want four selectors*/  
+  body{
+    background-image: none;
+  }
+  .pricing{
+    min-height: 500px;
+    /*Your code here.*/
+    /*Don't forget to vertically and horizontally alight the card*/
+    align-items: flex-start;
+  }
+  #gallery{
+    display: none;
+  }
+  .gallery{
+    display: none;
+  }
 }
 
 /*Your code here again.*/ 
