@@ -33,7 +33,7 @@ footer{
 }
 
 p {
-    padding: 0 2em;
+    padding: 0 1em;
 }
 
 #logo{
@@ -46,7 +46,7 @@ p {
     max-width: 80px;
     max-height: 72px;
     height: auto;
-    width: 100%;
+    width: 70%;
 }
 
 /* shake the cats */
@@ -54,7 +54,10 @@ p {
     animation: shake 1.5s;
     animation-iteration-count: infinite;
 }
-
+#logo{   
+    animation: shake 1.5s;
+    animation-iteration-count: 3;
+}
 @keyframes shake {
     0% { transform: rotate(30deg); }
     20% { transform: rotate(-10deg); }
@@ -105,13 +108,17 @@ p {
 .about_card{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 
 #intro-photo{
-    height: auto;
+    /* height: auto;
+    width: 100%; */
+    max-width: 400px;
+    /* max-height: auto; */
     width: 100%;
+    height: auto;
 }
 
 .intro-header-1{
@@ -123,6 +130,9 @@ p {
     padding-right: 1em;
 }
 
+.facts-list{
+    padding: 0 2em;
+}
 /* Gallery! */
 #world-map{
     height: 100%;
