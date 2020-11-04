@@ -35,7 +35,35 @@ footer{
 p {
     padding: 0 1em;
 }
+.container{
+    padding: 3em 0;
+}
+/***************************************/
+/* Nav bar */
+.nav_links{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
 
+.nav_elem a{
+    color: #9932CC;
+    font-size: 0.8em; 
+    text-decoration: none;
+    padding: 0 0.8em;
+}
+
+.nav_elem a:hover, a:focus{
+    font-weight: bold;
+    -webkit-text-decoration-style: dotted;
+            text-decoration-style: dotted;
+}
+
+#current_nav{
+    text-decoration: underline;
+}
+
+/* logo design */
 #logo{
     /* width: 5em;
     height: 4.5em; */
@@ -66,38 +94,11 @@ p {
     80% { transform: rotate(20deg); }
     100% { transform: rotate(30deg); }
 }
-
-.container{
-    padding: 3em 0;
-}
-
-.nav_links{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
-.nav_elem a{
-    color: #9932CC;
-    font-size: 0.8em; 
-    text-decoration: none;
-    padding: 0 0.8em;
-}
-
-.nav_elem a:hover, a:focus{
-    font-weight: bold;
-    -webkit-text-decoration-style: dotted;
-            text-decoration-style: dotted;
-}
-
-#current_nav{
-    text-decoration: underline;
-}
-
 #current_nav #logo{
     transform: rotate(30deg);
 }
-
+/***************************************/
+/* About */
 .about{
     display: flex;
     flex-direction: column;
@@ -105,12 +106,22 @@ p {
     justify-content: center;
 }
 
+@keyframes showup {
+    0% { opacity: 10%; }
+    20% { opacity: 20%; }
+    40% { opacity: 30%;}
+    60% { opacity: 40%;}
+    80% { opacity: 50%; }
+    100% { opacity: 60%;}
+}
+
 .about_card{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    animation: showup 0.3s;
+    animation-iteration-count: 1;
 }
-
 
 #intro-photo{
     /* height: auto;
@@ -133,6 +144,7 @@ p {
 .facts-list{
     padding: 0 2em;
 }
+/***************************************/
 /* Gallery! */
 #world-map{
     height: 100%;
@@ -154,9 +166,8 @@ p {
     height: 50%;
     padding: 0.5em 0;
 }
-
+/***************************************/
 /* Cats! */
-
 .cats-gallery{
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
@@ -186,6 +197,13 @@ p {
 
 
 /* Projects! */
+#pj-container{
+    /* font-family: 'Merriweather', serif; */
+    font-family: 'Domine', serif;
+}
+#pj-container p{
+    font-weight: bold;
+}
 .project{
     min-height: 600px;
     display: flex;
@@ -218,14 +236,7 @@ p {
     width: 100%;
     height: auto;
 }
-@keyframes prompt {
-    0% { opacity: 10%; }
-    20% { opacity: 20%; }
-    40% { opacity: 30%;}
-    60% { opacity: 40%;}
-    80% { opacity: 50%; }
-    100% { opacity: 60%;}
-}
+
 .opacity-try:hover:after {
     content:"Greece";
     width:100%;
