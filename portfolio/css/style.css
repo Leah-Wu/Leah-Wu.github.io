@@ -9,6 +9,8 @@ body{
 }
 
 h1{
+    font-family: 'Caveat', cursive;
+    font-family: 'Patrick Hand', cursive;
     font-size: 4em;
     text-align: center;
     line-height: 2;
@@ -18,14 +20,9 @@ h2{
     font-size: 2em;
     line-height: 2;
 }
-h3{
-    font-family: 'Caveat', cursive;
-    color: #929BA7;
-    font-size: 1em;
-}
+
 header{
     font-family: 'Alice', sans-serif;
-    background: #fff;
     /* border-bottom: 3px solid #50C7C7; */
     display: flex;
     flex-direction: row;
@@ -33,6 +30,9 @@ header{
 }
 
 footer{
+    /* background-color: #bacdf0;
+    opacity: 0.8;
+    color: #fff; */
     color: #637493;
     font-size: 0.8em;
     text-align: center;
@@ -42,7 +42,7 @@ p {
     padding: 0 1em;
 }
 .container{
-    padding: 3em 0;
+    padding: 1.5em 0;
 }
 /***************************************/
 /* Nav bar */
@@ -129,14 +129,17 @@ p {
     animation: showup 0.3s;
     animation-iteration-count: 1;
 }
+.about_card_1{
+    border-bottom: #929BA7 dashed;
+}
 
-#intro-photo{
+.intro-photo{
     /* height: auto;
     width: 100%; */
     /* max-width: 400px; */
     /* max-height: auto; */
     width: 100%;
-    width: 210px;
+    width: 180px;
     height: auto;
 }
 
@@ -166,6 +169,13 @@ p {
 }
 .world-map{
     text-align: center;
+}
+.gallery-head{
+    background-image: url('../images/map2.jpeg');
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-size: cover;
 }
 .gallery{
     min-height: 600px;
@@ -213,7 +223,8 @@ p {
 /* Projects! */
 #pj-container{
     /* font-family: 'Merriweather', serif; */
-    font-family: 'Domine', serif;
+    /* font-family: 'Domine', serif; */
+    font-family: 'Cabin', sans-serif;
 }
 #pj-container p{
     font-weight: bold;
@@ -231,7 +242,9 @@ p {
     height: 100%;
     padding: 1em 0;
 }
-
+.project-card-1{
+    border-bottom: #929BA7 dashed;
+}
 
 @media (prefers-reduced-motion: reduce) { 
     #logo:hover{
