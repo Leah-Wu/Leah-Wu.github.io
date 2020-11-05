@@ -1,6 +1,7 @@
 body{
     font-family: 'Caveat', cursive;
     font-family: 'Patrick Hand', cursive;
+    color: #253F63;
     margin: 0;
     padding: 3% 6%;
     word-spacing: 0.2em;
@@ -17,7 +18,11 @@ h2{
     font-size: 2em;
     line-height: 2;
 }
-
+h3{
+    font-family: 'Caveat', cursive;
+    color: #929BA7;
+    font-size: 1em;
+}
 header{
     font-family: 'Alice', sans-serif;
     background: #fff;
@@ -28,6 +33,7 @@ header{
 }
 
 footer{
+    color: #637493;
     font-size: 0.8em;
     text-align: center;
 }
@@ -47,7 +53,8 @@ p {
 }
 
 .nav_elem a{
-    color: #9932CC;
+    /* color: #9932CC; */
+    color: #637493;
     font-size: 0.8em; 
     text-decoration: none;
     padding: 0 0.8em;
@@ -126,9 +133,10 @@ p {
 #intro-photo{
     /* height: auto;
     width: 100%; */
-    max-width: 400px;
+    /* max-width: 400px; */
     /* max-height: auto; */
     width: 100%;
+    width: 210px;
     height: auto;
 }
 
@@ -143,6 +151,12 @@ p {
 
 .facts-list{
     padding: 0 2em;
+}
+.intext-link{
+    font-size: 1.5em;
+    color: #253F63;
+    text-decoration: none;
+    font-weight: bold;
 }
 /***************************************/
 /* Gallery! */
