@@ -186,11 +186,26 @@ p {
     text-align: center;
 }
 .gallery-head{
+    position: relative;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+.gallery-head::before {
+    content: "";
     background-image: url('../images/map2.jpeg');
-    background-repeat: no-repeat;
-    /* background-attachment: fixed; */
     background-position: center;
     background-size: cover;
+    opacity: 0.7;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+}
+.gallery-header{
+    text-align: center;
+    position: relative;
 }
 .gallery{
     min-height: 600px;
