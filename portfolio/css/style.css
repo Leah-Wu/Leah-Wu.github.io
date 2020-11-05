@@ -130,27 +130,34 @@ p {
     flex-direction: row;
     justify-content: flex-end;
 }
-/* .about_card_1{
+.about_card_1{
     border-bottom: #929BA7 dashed;
-} */
+}
 
 .intro-photo{
     /* height: auto;
     width: 100%; */
     /* max-width: 400px; */
     /* max-height: auto; */
+
     width: 100%;
-    width: 200px;
+    width: 140px;
     height: auto;
 }
+#intro-photo-1{
+    padding-top: 2em;
+}
+#intro-photo-2{
+    padding-top: 0.1em;
+}
 .intro-header{
-    text-align: left;
+    text-align: center;
 }
 
-.intro-text-1{
+/* .intro-text-1{
     border-bottom: #929BA7 dashed;
     padding-bottom: 1em;
-}
+} */
 /* .intro-header-1{
     padding-left: 1em;
 } */
@@ -283,8 +290,14 @@ p {
 
 }
 @media (prefers-reduced-motion: reduce) { 
+    #logo{
+        animation: none;
+    }
     #logo:hover{
-      animation: none;
+        animation: none;
+    }
+    .about{
+        animation:none;
     }
     /* .opacity-try:hover:after{
         animation: none;
