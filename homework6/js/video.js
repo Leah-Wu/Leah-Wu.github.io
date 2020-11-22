@@ -8,6 +8,8 @@ window.addEventListener("load", function() {
 	speed = video.playbackRate;
 	duration = video.duration;
 	console.log(duration);
+	volume = document.querySelector("#volumeSlider").value;
+	document.querySelector("#volume").innerHTML = volume + "%";
 });
 
 document.querySelector("#play").addEventListener("click", function() {
