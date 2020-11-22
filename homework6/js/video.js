@@ -13,6 +13,7 @@ window.addEventListener("load", function() {
 
 document.querySelector("#play").addEventListener("click", function() {
 	video.play();
+	document.querySelector("#volume").innerHTML = volume * 100 + "%";
 	console.log("Play Video");
 });
 
@@ -29,12 +30,13 @@ document.querySelector("#volumeSlider").addEventListener("click", function() {
 
 document.querySelector("#mute").addEventListener("click", function() {
 	var state = document.querySelector("#mute");
-	if(state.innerHTML == 'Mute'){
-		video.volume = 0;
+	// if(state.innerHTML == 'Mute'){
+	if(!video.muted){
+		video.muted = true;
 		state.innerHTML = 'Unmute';
 		console.log("muted");
 	}else{
-		video.volume = volume;
+		video.muted = false;
 		state.innerHTML = 'Mute';
 		console.log("unmuted");
 	}
