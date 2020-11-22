@@ -7,9 +7,8 @@ window.addEventListener("load", function() {
 	video = document.querySelector("#myVideo");
 	speed = video.playbackRate;
 	duration = video.duration;
+	volume = document.querySelector("#volumeSlider").value / 100;
 	console.log(duration);
-	volume = document.querySelector("#volumeSlider").value;
-	document.querySelector("#volume").innerHTML = volume + "%";
 });
 
 document.querySelector("#play").addEventListener("click", function() {
@@ -24,14 +23,22 @@ document.querySelector("#pause").addEventListener("click", function() {
 document.querySelector("#volumeSlider").addEventListener("click", function() {
 	volume = document.querySelector("#volumeSlider").value;
 	document.querySelector("#volume").innerHTML = volume + "%";
-	video.volume = volume / 100;
+	volume = volume / 100;
+	video.volume = volume;
 });
 
 document.querySelector("#mute").addEventListener("click", function() {
-	volume = 0;
-	video.volume = volume;
-	document.querySelector("#volume").innerHTML = volume + "%";
-	document.querySelector("#volumeSlider").value = volume;
+	var state = document.querySelector("#mute");
+	if(state.innerHTML == 'Mute'){
+		video.volume = 0;
+		state.innerHTML = 'Unmute';
+		console.log("muted");
+	}else{
+		video.volume = volume;
+		state.innerHTML = 'Mute';
+		console.log("unmuted");
+	}
+		
 });
 
 document.querySelector("#old").addEventListener("click", function() {
