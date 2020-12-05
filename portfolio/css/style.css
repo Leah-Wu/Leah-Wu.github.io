@@ -5,7 +5,7 @@ body{
     margin: 0;
     padding: 3% 6%;
     word-spacing: 0.2em;
-    font-size: 1em; /* test for this! Make all sizes em or rem */
+    font-size: 0.8em; /* test for this! Make all sizes em or rem */
 }
 
 h1{
@@ -33,7 +33,7 @@ header{
     background-position: center;  
     background-repeat: no-repeat; 
     background-size: cover;       
-    height: 200px;                
+    height: 100px;                
 }
 
 footer{
@@ -60,7 +60,7 @@ p {
 .nav_elem a{
     /* color: #9932CC; */
     color: #637493;
-    font-size: 0.8em; 
+    font-size: 1em; 
     text-decoration: none;
     padding: 0 0.8em;
 }
@@ -84,10 +84,9 @@ p {
     height: 4.5em; */
     /* max-width: 80px;
     max-height: 72px; */
-    min-width: 16px;
-    min-height: 12px; 
-    max-width: 80px;
-    max-height: 72px;
+
+    max-width: 60px;
+    max-height: 40px;
     height: auto;
     width: 70%;
 }
@@ -232,6 +231,14 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #142844;
 }
+#submit{
+    margin: 0;
+    position: relative;
+    top: 5%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
 /***************************************/
 /* Gallery! */
 #world-map{
@@ -281,35 +288,6 @@ input[type=submit]:hover {
     padding: 0;
 }
 /***************************************/
-/* Cats! */
-.cats-gallery{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 2fr;
-    grid-gap: 0.6em;
-}
-.cats-gallery img{
-    width: 100%;
-    height: 100%;
-}
-.cat-A{
-    grid-column: 1/3;
-    grid-row: 1/2;
-}
-.cat-B{
-    grid-column: 1/3;
-    grid-row: 3/4;
-}
-.cat-C{
-    grid-column: 1/2;
-    grid-row: 2/3;
-}
-.cat-D{
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
-
-/***************************************/
 /* Projects! */
 #pj-container{
     font-family: 'Cabin', sans-serif;
@@ -330,6 +308,9 @@ input[type=submit]:hover {
     height: 100%;
     padding: 1em 0;
 }
+.project-card{
+    width:  80%;
+}
 .project-card-1{
     padding: 10px 0;
 }
@@ -337,12 +318,14 @@ input[type=submit]:hover {
 /* flip card */
 .flip-card {
     background-color: transparent;
-    width: 500px;
-    height: 300px;
-    /* width: 100%;
-    height: auto; */
+    width: 100%;
+    height: 230px; 
 }
-  
+/* #flip-image{
+    width: 100%;
+    height: auto;
+} */
+
 .flip-card-inner {
     position: relative;
     width: 100%;
@@ -374,37 +357,119 @@ input[type=submit]:hover {
 }
 
 .flip-card-back div{
-    padding: 150px 0;
+    padding: 115px 0;
 }
 /***************************************/
-@media all and (min-width: 800px){
-    .cats-gallery{
-        display: grid;
-        grid-template-columns: 1fr 1fr 2fr;
-        grid-template-rows: 1fr 1fr;
-        grid-gap: 0.8em;
-    }
-    .cats-gallery img{
-        width: 100%;
-        height: 100%;
-    }
-    .cat-A{
-        grid-column: 1/3;
-        grid-row: 1/2;
-    }
-    .cat-B{
-        grid-column: 3/4;
-        grid-row: 1/3;
-    }
-    .cat-C{
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-    .cat-D{
-        grid-column: 2/3;
-        grid-row: 2/3;
-    }
+/* Cats! */
+.cats-gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
+    grid-gap: 0.6em;
+}
+.cats-gallery img{
+    width: 100%;
+    height: 100%;
+}
+.cat-A{
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+.cat-C{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.cat-D{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.cat-E{
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+.cat-B{
+    grid-column: 1/3;
+    grid-row: 4/5;
+}
+.cat-F{
+    grid-column: 1/3;
+    grid-row: 5/6;
+}
 
+/***************************************/
+@media all and (min-width: 800px){
+body{
+    font-size: 1em;
+}
+
+.nav_elem a{
+    font-size: 1.2em; 
+}
+
+/* logo design */
+#logo{
+    min-width: 16px;
+    min-height: 12px; 
+    max-width: 80px;
+    max-height: 72px;
+    height: auto;
+    width: 70%;
+}
+header{   
+    height: 200px;                
+}
+
+.flip-card{
+    height: 500px;
+}
+.flip-card-back div{
+    padding: 250px 0;
+}
+/***************************************/
+/* About */
+.intro-photo{
+    width: 100%;
+    width: 320px;
+    height: auto;
+}
+.about_card{
+    font-size: 1.3em;
+}
+/***************************************/
+.cats-gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 0.8em;
+}
+.cats-gallery img{
+    width: 100%;
+    height: 100%;
+}
+.cat-A{
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+.cat-B{
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+.cat-C{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.cat-D{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.cat-E{
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+.cat-F{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
 }
 @media (prefers-reduced-motion: reduce) { 
     #logo{
