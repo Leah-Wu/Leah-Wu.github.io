@@ -11,6 +11,7 @@
     <title>Huimin Wu's Portfolio</title>
   </head>
   <body>
+    <a class="skip" href="#skip">Skip to Main Content</a>
     <header>
         <nav>
             <ul class="nav_links">
@@ -19,10 +20,10 @@
             <li class="nav_elem"><a href="projects.html">Projects</a></li>
             </ul>
         </nav>
-        <a href="cats.html" id="current_nav"><img src ="images/logo.png" alt="logo" id = "logo"></a>
+        <a href="cats.html" ><img src ="images/logo.png" alt="logo" id = "logo" class="current_nav"></a>
     </header>
 
-    <main class="container">
+    <main class="container"id="skip" tabindex="0">
       <div class="head-title"><h1>Cats Here</h1></div>
       <div class="cats-gallery">
         <div class="cat-A"><img src="images/cat_A.png" alt="cats on the ground"></div> 
@@ -37,4 +38,12 @@
         &copy; Huimin Wu, Personal Portfolio 2020</p>
     </footer>
   </body>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2F8BR5QKTG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-2F8BR5QKTG');
+  </script>
 </html>

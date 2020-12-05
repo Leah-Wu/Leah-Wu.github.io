@@ -11,7 +11,8 @@
     <title>Huimin Wu's Portfolio</title>
   </head>
   <body>
-    <header>
+    <a class="skip" href="#skip">Skip to Main Content</a>
+    <header id="about_header">
         <nav>
             <ul class="nav_links">
             <li class="nav_elem" id="current_nav"><a href="index.html">About</a></li>
@@ -22,7 +23,7 @@
         <a href="cats.html"><img src ="images/logo.png" alt="logo" id = "logo"></a>
     </header>
 
-    <main class="container">
+    <main class="container" id="skip" tabindex="0">
         <div class="head-title"><h1>About Me</h1></div>
         <div class="about">
             <div class="about_card about_card_1">
@@ -55,6 +56,17 @@
                     <img src="images/intro_photo2.jpg" alt="intro-photo" class="intro-photo" id="intro-photo-2">
                 </div>
            </div> 
+           <div class="about_card contact_form">
+                <form action="https://formspree.io/f/xqkgdrzj" method="POST">
+                    <h2>Contact Me</h2>
+                    <label for="name">Name:</label><br/><input type="text" id="contact_name" name="Name" placeholder="Your name">
+                    <label for="email">Email:</label><br/><input type="email" id="contact_email" name="Email" placeholder="Your email"><br/>
+                    <label for="message">Message:</label><br/>
+                    <input type="text" id="contact_message" name="Message" placeholder="Leave message here">
+                    <input type="submit" value="Submit">
+                </form>
+            
+           </div>
         </div>
     </main>
 
@@ -63,4 +75,12 @@
         &copy; Huimin Wu, Personal Portfolio 2020</p>
     </footer>
   </body>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2F8BR5QKTG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-2F8BR5QKTG');
+  </script>
 </html>

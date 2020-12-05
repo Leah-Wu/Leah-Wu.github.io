@@ -27,6 +27,13 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    /* Parallax effect */
+    background-image: url(../images/parallel.png);
+    background-attachment: fixed;    
+    background-position: center;  
+    background-repeat: no-repeat; 
+    background-size: cover;       
+    height: 200px;                
 }
 
 footer{
@@ -41,9 +48,7 @@ footer{
 p {
     padding: 0 1em;
 }
-.container{
-    padding: 1.5em 0;
-}
+
 /***************************************/
 /* Nav bar */
 .nav_links{
@@ -67,7 +72,10 @@ p {
 }
 
 #current_nav{
-    text-decoration: underline;
+    border-bottom: 2px dotted #50C7C7;
+}
+.current_nav{
+    border: 2px dotted #50C7C7;
 }
 
 /* logo design */
@@ -105,7 +113,25 @@ p {
     transform: rotate(30deg);
 }
 /***************************************/
+/* Skip to main content */
+a.skip{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+}
+
+a.skip:focus{
+    top:1px;
+    text-decoration-style: solid;
+}
+/***************************************/
 /* About */
+
 .about{
     display: flex;
     flex-direction: column;
@@ -130,7 +156,7 @@ p {
     flex-direction: row;
     justify-content: flex-end;
 }
-.about_card_1{
+.about_card_1, .about_card_2{
     border-bottom: #929BA7 dashed;
 }
 
@@ -177,6 +203,36 @@ p {
     font-weight: bold;
 }
 /***************************************/
+/* Form */
+.contact_form{
+    border:1px solid #ccc;
+    border-radius: 4px;
+    padding:0 50px 10px 50px;
+    margin-top: 4px;
+}
+input[type=text], input[type=email]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 4px;
+    margin-bottom: 8px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #253F63;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #142844;
+}
+/***************************************/
 /* Gallery! */
 #world-map{
     height: 100%;
@@ -191,7 +247,7 @@ p {
     align-items: center;
     justify-content: center; */
 }
-.gallery-head::before {
+/* .gallery-head::before {
     content: "";
     background-image: url('../images/map2.jpeg');
     background-position: center;
@@ -202,7 +258,7 @@ p {
     bottom: 0px;
     left: 0px;
     position: absolute;
-}
+} */
 .gallery-header{
     text-align: center;
     position: relative;
@@ -219,6 +275,10 @@ p {
     width: 80%;
     height: 50%;
     padding: 0.5em 0;
+}
+.gallery_img:hover{
+    border:4px solid  #253F63;
+    padding: 0;
 }
 /***************************************/
 /* Cats! */
@@ -249,11 +309,9 @@ p {
     grid-row: 2/3;
 }
 
-
+/***************************************/
 /* Projects! */
 #pj-container{
-    /* font-family: 'Merriweather', serif; */
-    /* font-family: 'Domine', serif; */
     font-family: 'Cabin', sans-serif;
 }
 #pj-container p{
@@ -273,8 +331,52 @@ p {
     padding: 1em 0;
 }
 .project-card-1{
-    border-bottom: #929BA7 dashed;
+    padding: 10px 0;
 }
+
+/* flip card */
+.flip-card {
+    background-color: transparent;
+    width: 500px;
+    height: 300px;
+    /* width: 100%;
+    height: auto; */
+}
+  
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+  
+.flip-card:hover .flip-card-inner,
+.flip-card:focus-within .flip-card-inner,
+.flip-card:active .flip-card-inner,
+.flip-card:focus .flip-card-inner{
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+}
+  
+.flip-card-back {
+    background-color: white;
+    color: #253F63;
+    text-align: center;
+    transform: rotateY(180deg);
+}
+
+.flip-card-back div{
+    padding: 150px 0;
+}
+/***************************************/
 @media all and (min-width: 800px){
     .cats-gallery{
         display: grid;
@@ -314,6 +416,9 @@ p {
     .about{
         animation:none;
     }
+    .flip-card-inner {
+        transition: transform none;
+    }
     /* .opacity-try:hover:after{
         animation: none;
     } */
@@ -327,8 +432,9 @@ p {
     width: 100%;
     height: auto;
 }
+ */
 
-.opacity-try:hover:after {
+/* .opacity-try:hover:after {
     content:"Greece";
     width:100%;
     height:100%;
@@ -346,5 +452,4 @@ p {
     animation-iteration-count: 1;
     color:white;
     font-size:20px;
-}  
-*/
+}   */

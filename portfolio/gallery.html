@@ -11,6 +11,7 @@
     <title>Huimin Wu's Portfolio</title>
   </head>
   <body>
+    <a class="skip" href="#skip">Skip to Main Content</a>
     <header>
         <nav>
             <ul class="nav_links">
@@ -22,22 +23,22 @@
         <a href="cats.html"><img src ="images/logo.png" alt="logo" id = "logo"></a>
     </header>
 
-    <main class="container">
+    <main class="container"id="skip" tabindex="0">
         <div class="gallery-head"><h1 class= "gallery-header">Gallery</h1></div>
-        <!-- <div class="world-map">
+        <div class="world-map">
           <img id="world-map" src="images/map2.jpeg" alt="world-map">
-        </div> -->
+        </div>
         <div class="gallery"> 
-          <img id="China" src="images/china.jpg" alt="china-image"/>
-          <img id="Beijing" src="images/beijing.jpg" alt="beijing-image" />
-          <img id="Paris" src="images/paris.jpg" alt="paris-image" />
-          <img id="Paris2" src="images/paris2.jpg" alt="paris-image2" />
-          <img id="Ediburgh" src="images/edinburgh.jpg" alt="edinburgh-image" />
-          <img id="Japan" src="images/japan.jpg" alt="japan-image" />
-          <img id="Italy" src="images/italy.jpg" alt="italy-image" />
-          <img id="Venice" src="images/venice2.jpg" alt="Venice-image">
-          <img id="Santoroni" src="images/santoroni2.jpg" alt="greece-image" />
-          <img id="Athen" src="images/greece2.jpg" alt="Athen-image">
+          <img class="gallery_img" id="China" src="images/china.jpg" alt="china-image"/>
+          <img class="gallery_img" id="Beijing" src="images/beijing.jpg" alt="beijing-image" />
+          <img class="gallery_img" id="Paris" src="images/paris.jpg" alt="paris-image" />
+          <img class="gallery_img" id="Paris2" src="images/paris2.jpg" alt="paris-image2" />
+          <img class="gallery_img" id="Ediburgh" src="images/edinburgh.jpg" alt="edinburgh-image" />
+          <img class="gallery_img" id="Japan" src="images/japan.jpg" alt="japan-image" />
+          <img class="gallery_img" id="Italy" src="images/italy.jpg" alt="italy-image" />
+          <img class="gallery_img" id="Venice" src="images/venice2.jpg" alt="Venice-image">
+          <img class="gallery_img" id="Santoroni" src="images/santoroni2.jpg" alt="greece-image" class="opacity-try" />
+          <img class="gallery_img" id="Athen" src="images/greece2.jpg" alt="Athen-image">
         </div>
     </main>
 
@@ -46,4 +47,12 @@
         &copy; Huimin Wu, Personal Portfolio 2020</p>
     </footer>
   </body>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2F8BR5QKTG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-2F8BR5QKTG');
+  </script>
 </html>

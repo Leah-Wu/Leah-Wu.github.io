@@ -13,6 +13,7 @@
     <title>Huimin Wu's Portfolio</title>
   </head>
   <body>
+    <a class="skip" href="#pj-container">Skip to Main Content</a>
     <header>
         <nav>
             <ul class="nav_links">
@@ -23,23 +24,47 @@
         </nav>
         <a href="cats.html"><img src ="images/logo.png" alt="logo" id = "logo"></a>
     </header>
-    <main class="container" id="pj-container">
+    <main class="container"  id="pj-container" tabindex="0">
       <div class="head-title"><h1>Projects</h1></div>
       <div class="project">
+
         <div class="project-card project-card-1">
-          <h2 id = "pj1">Recommender System</h2>
-          <h3>An event recommender system based on user's favorites and location</h3>
-          <div class="project-image"><img src="images/pj1.png" alt="Recommender System UI"></div>
+          <h2 id="pj1">Recommender System</h2>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <a href="#">
+                <div class="flip-card-front">
+                  <img src="images/pj1.png" alt="Recommender System UI">
+                </div>
+              </a>
+              <div class="flip-card-back">
+                <div>An event recommender system based on user's favorites and location</div>
+              </div>
+            </div>
+          </div>
+          <div class="project-image"><img src="images/recommendor_theory.png" alt="ecommerce login"></div>
         </div>
 
         <div class="project-card project-card-2">
-          <h2 id = "pj2">Ecommerce</h2>
-          <h3>A ecommerce platform: both user-end system and administrator system</h3>
-          <div class="project-image"><img src="images/pj2.png" alt="ecommerce UI"></div>
+          <h2 id = "pj2">Ecommerce System</h2>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <a href="#">
+                <div class="flip-card-front">
+                  <img src="images/pj2.png" alt="ecommerce UI">
+                </div>
+              </a>
+              <div class="flip-card-back">
+                <div>A ecommerce platform: both user-end system and administrator system</div>
+              </div>
+            </div>
+          </div>
           <div class="project-image"><img src="images/pj2-2.png" alt="ecommerce login"></div>
           <div class="project-image"><img src="images/pj2-3.png" alt="ecommerce administrator UI"></div>
         </div>
+
       </div>
+
     </main>
 
     <footer>
@@ -47,4 +72,12 @@
         &copy; Huimin Wu, Personal Portfolio 2020</p>
     </footer>
   </body>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2F8BR5QKTG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-2F8BR5QKTG');
+  </script>
 </html>
