@@ -59,7 +59,9 @@ p {
 
 .nav_elem a{
     /* color: #9932CC; */
-    color: #637493;
+    color: #596a8d;
+    /* color: #253F63; */
+    background-color: white;
     font-size: 1em; 
     text-decoration: none;
     padding: 0 0.8em;
